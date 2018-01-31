@@ -32,7 +32,9 @@ The details of the matrices and structure are present in the paper.
 Clone or download the repository. Various inputs are needed to the FAST MPC class which are explained as follows.
 
 Q - State stage cost
+
 R - Control stage cost
+
 S - State control coupled cost
 Qf - Terminal state cost
 q - linear state cost
