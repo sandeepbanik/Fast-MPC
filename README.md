@@ -36,21 +36,37 @@ Q - State stage cost
 R - Control stage cost
 
 S - State control coupled cost
+
 Qf - Terminal state cost
+
 q - linear state cost
+
 r - linear control cost
+
 qf - terminal state linear cost
+
 x_min - lower bound on state
+
 x_max - upper bound on state
+
 u_min - lower bound on control
+
 u_max - upper bound on control
+
 T - Horizon length
+
 x0 - initial state
+
 A - State transition matrix
+
 B - Control matrix
+
 w - distrubance vector
+
 xf - final state
+
 x_init - initialization(optional) (Note: if you intend to provide your own initialization, then the entire vector length needs to be provided i.e., T*(n+m))
+
 
 A constructor is also present for the class and the cronological order is as mentioned above.
 
