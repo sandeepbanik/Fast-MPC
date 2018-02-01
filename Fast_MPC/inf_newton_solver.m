@@ -22,13 +22,11 @@ for i=1:max_iter
     end   
     
     L = chol(KKT_H,'lower');
-    n = size(KKT_H,1);
     optsL.LT = true;
     optsU.UT = true;
-    phi_inv = linsolve(L',linsolve(L,eye(n,n),optsL),optsU);
-    Schur = C*(phi_inv)*C';
-    Beta = -rp(z) + C*phi_inv*rd(z,nu);
-    
+    Schur = C*linsolve(L',linsolve(L,C',optsL),optsU);
+    phi_inv_rd = linsolve(L',linsolve(L,rd(z,nu),optsL),optsU);
+    Beta = -rp(z) + C*phi_inv_rd;
     SL = chol(Schur,'lower');
     int_nu = linsolve(SL,-Beta,optsL);
     del_nu = linsolve(SL',int_nu,optsU);
