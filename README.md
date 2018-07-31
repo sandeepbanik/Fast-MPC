@@ -11,6 +11,8 @@ In the conventional method, a MPC problem is solved and the first control step i
 Where,
 
 ![](http://latex.codecogs.com/gif.latex?%24%24%20l_%7Bf%7D%28x%28t&plus;T%29%29%20%3D%20x%28t&plus;T%29%5E%5Cintercal%20Q_%7Bf%7Dx%28t&plus;T%29%20&plus;%20q_%7Bf%7D%5E%5Cintercal%20x%28t&plus;T%29%20%24%24)
+
+
 ![](http://latex.codecogs.com/gif.latex?l%28x%28%5Ctau%29%2Cu%28%5Ctau%29%29%20%3D%20%5Cbegin%7Bbmatrix%7Dx%28t%29%20%26%20u%28t%29%20%5Cend%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7DQ%20%26%20S%5E%5Cintercal%20%5C%5C%20S%20%26%20R%20%5Cend%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7Dx%28t%29%20%5C%5C%20u%28t%29%20%5Cend%7Bbmatrix%7D%20&plus;%20q%5E%5Cintercal%20x%28t%29%20&plus;%20r%5E%5Cintercal%20u%28t%29)
 
 The above mentioned problem is converted into the following structure
