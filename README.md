@@ -1,5 +1,5 @@
 # Fast MPC (Model predictive control)
-This repository contains matlab interface to convert a standard model predictive control to fast model predictive control based on the paper [Fast Model predictive control using online optimization]. The fast MPC class solves using a custom built **infeasible start newton solver** explointing the structure of MPC. 
+This repository contains matlab interface to convert a standard model predictive control to fast model predictive control based on the paper [Fast Model predictive control using online optimization]. The fast MPC class solves using a custom built **infeasible start newton solver** exploiting the structure of MPC. 
 
 [Fast Model predictive control using online optimization]:http://stanford.edu/~boyd/papers/pdf/fast_mpc.pdf 
 
